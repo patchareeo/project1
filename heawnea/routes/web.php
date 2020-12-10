@@ -68,3 +68,10 @@ Route::get('/templete', function () {
 Route::get('/test', function () {
     return view('templete/test');
 })->name('test');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
